@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>GUVI</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="page">
+        <div class="header">
+          <a id="signup" href="#signup">signup</a>
+        </div>
+        <div id="errorMsg"></div>
+        <div class="content">
+          <form
+            action="/users/create"
+            class="signup"
+            name="signupForm"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="username"
+              id="signName"
+              placeholder="Username"
+            />
+            <input
+              type="email"
+              name="Email"
+              id="signEmail"
+              placeholder="Email"
+            />
+            <input
+              type="password"
+              name="password"
+              id="signPassword"
+              placeholder="Password"
+            />
+            <input
+              type="password"
+              name="confirmpassword"
+              id="confirmPassword"
+              placeholder="Confirm password"
+            /><br />
+            <button>sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
